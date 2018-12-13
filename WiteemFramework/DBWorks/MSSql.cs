@@ -48,7 +48,17 @@ namespace WiteemFramework.DBWorks
                 //获取所有字段，和主键名称
                 List<string> columns = null;
                 List<PropertyInfo> proList = new List<PropertyInfo>();
-                columns = CommonHelper.GetTableColumns(pis, ref proList, isIdentity);
+                //获取所有字段名称(缓存处理)
+                if (CacheHelper.GetCache(tableName + isIdentity.ToString()) != null)
+                {
+                    columns = (List<string>)CacheHelper.GetCache(tableName + isIdentity.ToString());
+                }
+                else
+                {
+                    columns = CommonHelper.GetTableColumns(pis, ref proList, isIdentity);
+                    CacheHelper.SetCache(tableName + isIdentity.ToString(), columns, Cache.NoAbsoluteExpiration, TimeSpan.FromMinutes(60));
+                }
+                //columns = CommonHelper.GetTableColumns(pis, ref proList, isIdentity);
                 //处理是否包含主键插入
                 //if (isIdentity)
                 //{
@@ -197,14 +207,14 @@ namespace WiteemFramework.DBWorks
                 List<string> columns = null;
                 List<PropertyInfo> proList = new List<PropertyInfo>();
                 //获取所有字段名称(缓存处理)
-                if (CacheHelper.GetCache(identityName) != null)
+                if (CacheHelper.GetCache(tableName) != null)
                 {
-                    columns = (List<string>)CacheHelper.GetCache(identityName);
+                    columns = (List<string>)CacheHelper.GetCache(tableName);
                 }
                 else
                 {
                     columns = CommonHelper.GetTableColumns(pis, ref proList, true);
-                    CacheHelper.SetCache(identityName, columns, Cache.NoAbsoluteExpiration, TimeSpan.FromMinutes(60));
+                    CacheHelper.SetCache(tableName, columns, Cache.NoAbsoluteExpiration, TimeSpan.FromMinutes(60));
                 }
                 foreach (T item in obj)
                 {
@@ -289,14 +299,14 @@ namespace WiteemFramework.DBWorks
             filterList.Add(ColumnKeyType.Read);
             filterList.Add(ColumnKeyType.Identity);
             //获取所有字段名称(缓存处理)
-            if (CacheHelper.GetCache(identityName) != null)
+            if (CacheHelper.GetCache(tableName) != null)
             {
-                columns = (List<string>)CacheHelper.GetCache(identityName);
+                columns = (List<string>)CacheHelper.GetCache(tableName);
             }
             else
             {
                 columns = CommonHelper.GetTableColumns(pis, filterList, ref proList);
-                CacheHelper.SetCache(identityName, columns, Cache.NoAbsoluteExpiration, TimeSpan.FromMinutes(60));
+                CacheHelper.SetCache(tableName, columns, Cache.NoAbsoluteExpiration, TimeSpan.FromMinutes(60));
             }
             //生成SQL语句
             StringBuilder sqlText = new StringBuilder();
