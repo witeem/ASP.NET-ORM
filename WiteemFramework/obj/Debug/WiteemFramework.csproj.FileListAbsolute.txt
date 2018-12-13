@@ -1,0 +1,6 @@
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Debug\WiteemFramework.dll
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Debug\WiteemFramework.pdb
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Debug\WiteemFramework.dll
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Debug\WiteemFramework.pdb
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Debug\log4net.dll
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Debug\WiteemFramework.csprojResolveAssemblyReference.cache

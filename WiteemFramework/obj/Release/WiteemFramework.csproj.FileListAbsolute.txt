@@ -1,0 +1,5 @@
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Release\WiteemFramework.dll
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Release\WiteemFramework.pdb
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Release\log4net.dll
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Release\WiteemFramework.dll
+D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Release\WiteemFramework.pdb
