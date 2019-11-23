@@ -4,3 +4,11 @@ D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Debug\WiteemFramework.dll
 D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Debug\WiteemFramework.pdb
 D:\witeem\Project\MyProject\Witeem\WiteemFramework\bin\Debug\log4net.dll
 D:\witeem\Project\MyProject\Witeem\WiteemFramework\obj\Debug\WiteemFramework.csprojResolveAssemblyReference.cache
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\bin\Debug\WiteemFramework.dll
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\bin\Debug\WiteemFramework.pdb
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\bin\Debug\log4net.dll
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\obj\Debug\WiteemFramework.csprojAssemblyReference.cache
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\obj\Debug\WiteemFramework.csproj.CoreCompileInputs.cache
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\obj\Debug\WiteemFramework.csproj.CopyComplete
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\obj\Debug\WiteemFramework.dll
+F:\weitianhua\ASP.NET-ORM\WiteemFramework\obj\Debug\WiteemFramework.pdb
