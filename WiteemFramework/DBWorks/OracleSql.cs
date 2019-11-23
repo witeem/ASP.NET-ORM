@@ -14,6 +14,9 @@ using WiteemFramework.Model;
 
 namespace WiteemFramework.DBWorks
 {
+    /// <summary>
+    /// Oracle
+    /// </summary>
     public class OracleSql : SQLHelper
     {
         log4net.ILog execlog = log4net.LogManager.GetLogger(typeof(OracleSql));//获取一个日志记录器

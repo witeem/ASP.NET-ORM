@@ -15,7 +15,9 @@ using WiteemFramework.Model;
 
 namespace WiteemFramework.DBWorks
 {
-    //MS Sql
+    /// <summary>
+    /// MS Sql
+    /// </summary>
     public class MSSql:SQLHelper
     {
         log4net.ILog execlog = log4net.LogManager.GetLogger(typeof(MSSql));//获取一个日志记录器
